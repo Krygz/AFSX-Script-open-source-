@@ -4,7 +4,7 @@ getgenv().autochack = false;
 getgenv().autosword = false;
 getgenv().autostar = false;
 getgenv().autorun = false;
--- getgenv().autostand = false; 
+
 
 
 local remotePath = game:GetService("ReplicatedStorage");
@@ -95,15 +95,7 @@ function TeleportTraning(training)
 end
 
 
-   -- add 
--- function Stand()
---     spawn(function ()
---         while autostand == true do
-            
---         end
---     end)
-    
--- end
+
 
 
 
@@ -293,34 +285,3 @@ tp:CreateButton("Ice Chamber", function ()
     TeleportTraning("UA Training Grounds");
  end)
 
---  egg:CreateToggle("Stand Capsule" , function (bool)
---     getgenv().autostand = bool
---     print("Auto Stand is" , bool)
---     if bool then
-        
---     end
---  end)
--- localização atual
--- function getCurrentPlayerPOS ()
---     local plyr = game.Players.localPlayer;
---    if plyr.character then
---      return plyr.character.HumanoidRootPart.Position;
---    end
---    return false;
--- end
--- --   teleporte 
--- function teleportTo(placeCFrame)
---     local plyr = game.Players.localPlayer;
---     if plyr.character  then
---     plyr.character.HumanoidRootPart.CFrame = placeCFrame;
---     end 
--- end
--- function TeleportTraning(training)
---     if game:GetService("Workspace").Scriptable:FindFirstChild(training) then
---         teleportTo(game:GetService("Workspace").Scriptable.TrainingArea[TrainingArea].CFrame)
---     end
--- end
-
--- teleporttraning("HeroInside")
-
--- teleportTo(game:GetService("Workspace").Scriptable.TrainingArea.CFrame)
