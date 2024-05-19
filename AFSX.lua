@@ -5,11 +5,7 @@ getgenv().autosword = false;
 getgenv().autostar = false;
 getgenv().autorun = false;
 
-
-
 local remotePath = game:GetService("ReplicatedStorage");
-
-
 
    function Strength ()
     spawn(function ()
@@ -94,19 +90,6 @@ function TeleportTraning(training)
     end
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/EngoUILIB_V2.lua", true))()
 
  local main = library:CreateMain("AFSX", "", Enum.KeyCode.LeftAlt)
@@ -172,10 +155,6 @@ end)
    end
  end)
 
-
-
-
- 
 tp:CreateButton("Volcano", function ()
    TeleportTraning("Volcano");
 end)
